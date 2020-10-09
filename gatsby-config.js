@@ -6,5 +6,9 @@
 
 module.exports = {
   /* Your site config here */
-  plugins: [],
+  plugins: 
+  [
+    'gatsby-plugin-material-ui',
+    'gatsby-theme-material-ui',
+],
 }
