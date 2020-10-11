@@ -8,7 +8,17 @@ module.exports = {
   /* Your site config here */
   plugins: 
   [
-    'gatsby-plugin-material-ui',
-    'gatsby-theme-material-ui',
+    {
+      resolve: `gatsby-plugin-google-fonts-v2`,
+      options: {
+        fonts: [
+          {
+            family: 'Raleway',
+            variable: true,
+            weights: ['200..900']
+          }
+        ]
+      }
+    }
 ],
 }
