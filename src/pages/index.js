@@ -3,13 +3,14 @@ import Header from "../components/header"
 import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 import Fade from 'react-reveal/Fade';
+import selfPhoto from '../assets/pics/photo-me.png'
 
 const useStyles = makeStyles((theme) => ({
   root:{
     background: 'rbg(255,255,255)',
-    background: 'linear-gradient(152deg, rgba(255,255,255,1) 46%, rgba(193,215,197,1) 100%)',
+    background: 'linear-gradient(-152deg, rgba(255,255,255,1) 46%, rgba(193,215,197,1) 100%)',
     height: '800px',
-    width: '100%'
+    width: '100wv'
     
   }
 }));
@@ -35,10 +36,9 @@ const Index = (props) => {
           <Grid container justify='flex-end'>
             <h3>know more about me.</h3>
           </Grid>
-            
           </Grid>
-          <Grid xs={12} sm={6}>
-            
+          <Grid item xs={12} sm={6}>
+            <img src={selfPhoto} alt="me" style={{width:'70%'}} />
           </Grid>
       </Grid>
     </div>
