@@ -5,6 +5,7 @@ import Grid from '@material-ui/core/Grid';
 import Main from "../pages/main"
 import Layout from "../components/layout"
 import About from "../pages/about"
+import Foot from "../components/foot"
 
 const useStyles = makeStyles((theme) => ({
   root:{
@@ -32,9 +33,12 @@ const Index = (props) => {
       <Grid container>
         <Main />
       </Grid> 
-      <Grid container>
+      {/* <Grid container>
         <About />  
-      </Grid>   
+      </Grid>    */}
+      <Grid container style={{marginTop: '70px', paddingBottom: '50px'}}>
+        <Foot />
+      </Grid>
       </Layout>
     </div>
   );

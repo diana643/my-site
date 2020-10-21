@@ -38,6 +38,7 @@ const useStyles = makeStyles(theme => ({
     width: '100%'
   },
   title: {
+    fontSize: '25px',
     color: '#000',
     fontFamily: 'Raleway',
     fontWeight: '300'
