@@ -6,64 +6,73 @@ import Button from '@material-ui/core/Button';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid';
+import { Paper } from '@material-ui/core';
+import sizeMe from 'react-sizeme';
+import menuSmall from "../components/menu"
+
+function menuBig(props) {
+  return (
+      <Grid container spacing={2}> 
+              <Grid item>
+                <Button component={Link} to="/">
+                  About me
+                </Button>
+              </Grid>
+              <Grid item>
+                <Button component={Link} to="/">
+                Projects
+                </Button>
+              </Grid>
+              <Grid item>
+                <Button >Contact</Button>
+              </Grid> 
+      </Grid>
+  );
+}
 
 const useStyles = makeStyles(theme => ({
   root: {
     //flexGrow: 1,
-    backgroundColor: '#fff',
-    //opacity: '0.0'
+    backgroundColor: 'rgb(255,255,255,0.0)',
+    height: '60px',
+    width: '100%'
   },
   title: {
-    color: '#000'
+    color: '#000',
+    fontFamily: 'Raleway',
+    fontWeight: '300'
   },
 }));
 
 function Header(props) {
   const classes = useStyles();
 
+  const{ width,height} = props.size;
+
+  const ToRenderMenu = width > 600
+  ? menuBig: menuSmall;
+
   return (
     <Fragment>
-      <AppBar className={classes.root}>
-      <Toolbar> 
-        <Grid container justify='space-between' alignItems="center"> 
+      <Paper elevation={0} className={classes.root}>
+      <Grid container justify='space-between' alignItems="center" style={{padding:'0 35px'}}> 
           <Grid item>
             <Typography
             variant="h6"
             className={classes.title}
             >
-            Welcome to my site
+            Welcome
             </Typography>
           </Grid>
           <Grid item>
-            <Grid container>
-              <Button
-                component={Link}
-                to="/"
-              >
-                Home
-              </Button>
-              <Button
-              component={Link}
-              to="/"
-            >
-              Projects
-            </Button>
-            <Button
-              component={Link}
-              to="/"
-            >
-              Contact
-            </Button>
-            </Grid>
+            <ToRenderMenu />
           </Grid>
 
         </Grid>
- 
-      </Toolbar>
-      </AppBar>
+      </Paper>
     </Fragment>
     
   );
 }
 
-export default Header;
+export default sizeMe({monitorWidth: true}) (Header);
