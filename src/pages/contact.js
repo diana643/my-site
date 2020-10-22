@@ -11,13 +11,13 @@ const useStyles = makeStyles((theme) => ({
 
   }));
   
-  const Projects = (props) => {
+  const Contact = (props) => {
     const classes = useStyles();
   
     return (
         <layout>
             <Grid container>
-                <h2 className={classes.title}>Chez Edifixio</h2>
+                <h2 className={classes.title}>Contact me</h2>
             </Grid>
             <Grid container justify='center'>
                 <Grid item>
@@ -28,4 +28,4 @@ const useStyles = makeStyles((theme) => ({
     );
   }
   
-  export default Projects;
+  export default Contact;

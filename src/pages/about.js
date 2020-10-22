@@ -4,12 +4,16 @@ import Grid from '@material-ui/core/Grid';
 import { Link } from "@reach/router";
 
 const useStyles = makeStyles((theme) => ({
-        paper: {
-            padding: '6px 16px',
+        root: {
+            marginTop: '50px',
           },
           secondaryTail: {
             backgroundColor: theme.palette.secondary.main,
           },
+          title: {
+            fontFamily:'Raleway',
+            margin: '0 35px'
+          }
 
   }));
   
@@ -17,16 +21,18 @@ const useStyles = makeStyles((theme) => ({
     const classes = useStyles();
   
     return (
-        <layout>
+       <div className={classes.root}>
             <Grid container>
-                <h1 style={{fontFamily:'Raleway'}}>About me</h1>
+                <h2 className={classes.title}>About me</h2>
             </Grid>
             <Grid container justify='center'>
                 <Grid item>
-
+                    <p>
+                        
+                    </p>
                 </Grid>
             </Grid>
-        </layout>
+       </div>
     );
   }
   

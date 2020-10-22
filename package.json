@@ -23,6 +23,7 @@
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-reveal": "^1.2.2",
+    "react-router-dom": "^5.2.0",
     "react-sizeme": "^2.6.12"
   },
   "devDependencies": {

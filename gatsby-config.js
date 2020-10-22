@@ -5,6 +5,9 @@
  */
 
 module.exports = {
+  siteMetadata: {
+    title: `Sian's site`,
+  },
   /* Your site config here */
   plugins: 
   [
