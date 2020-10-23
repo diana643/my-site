@@ -1,65 +1,61 @@
-import React, { Fragment } from "react"
-import Header from "../components/header"
+import React from "react"
 import { makeStyles } from "@material-ui/core/styles"
 import Grid from "@material-ui/core/Grid"
-import Main from "../pages/main"
-import Layout from "../components/layout"
-import About from "../pages/about"
-import Foot from "../components/foot"
-import Projects from "../pages/projects"
-import Contact from "../pages/contact"
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route
-} from "react-router-dom";
+import Fade from "react-reveal/Fade"
+import selfPhoto from "../assets/pics/photo-me.png"
+import MenuButton from "../components/MenuButton"
+import Header from "../components/header"
+import Footer from "../components/footer"
 
 const useStyles = makeStyles(theme => ({
-  root: {
-    //background: "rbg(255,255,255)",
-    // background:
-    //   "linear-gradient(-152deg, rgba(255,255,255,1) 46%, rgba(193,215,197,1) 100%)",
-    //height: '800px',
-
+  root: {},
+  link: {
+    textDecoration: "none",
+    color: "#000",
+    "&:hover": {
+      borderBottom: "3px solid #688A5F",
+    },
   },
-  podcast: {
-    fontFamily: "Raleway",
-  },
+  
 }))
 
-const Index = props => {
+export default () => {
   const classes = useStyles()
 
   return (
     <div className={classes.root}>
-      <Layout>
-        <Router>
-          <Switch>
-            <Route exact path='/'>
-              <Header />
-              <Main />
-              <Foot />
-            </Route>
-            <Route exact path='/about'>
-              <Header />
-              <About />
-              <Foot />
-            </Route>
-            <Route exact path='/projects'>
-              <Header />
-              <Projects />
-              <Foot />
-            </Route>
-            <Route exact path='/contact'>
-              <Header />
-              <Contact />
-              <Foot />
-            </Route>
-          </Switch>
-        </Router>
-      </Layout>
+      <Header />
+      <Grid container style={{ marginTop: "50px" }}>
+        <Grid item xs={12} sm={6} style={{ padding: "0 35px" }}>
+          <Grid container>
+            <Fade left>
+              <h1 style={{ fontFamily: "Raleway" }}>
+                Hello there! This is Sian.
+              </h1>
+              <h2 style={{ fontFamily: "Raleway", fontWeight: "300" }}>
+                I come from Beijing, and now based in Paris. I love UI/UX
+                design, Web development. And also I have a podcast{" "}
+                <a className={classes.link} href="https://anchor.fm/diana643">
+                  {" "}
+                  Liang Qiang.
+                </a>
+              </h2>
+            </Fade>
+          </Grid>
+          <Grid container justify="flex-end">
+            <MenuButton
+            link="/about/"
+            title="Know more about me "
+            />
+          </Grid>
+        </Grid>
+        <Grid item xs={12} sm={6}>
+          <Grid container justify="center" alignItems="flex-begin">
+            <img src={selfPhoto} alt="me" style={{ width: "65%", height: '65%'}} />
+          </Grid>
+        </Grid>
+      </Grid>
+      <Footer />
     </div>
   )
 }
-
-export default Index

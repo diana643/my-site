@@ -1,7 +1,8 @@
-import React from "react"
+import React, { Fragment } from "react"
 import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
-import { Link } from "@reach/router";
+import Header from "../components/header"
+import Footer from "../components/footer"
 
 const useStyles = makeStyles((theme) => ({
           title: {
@@ -11,11 +12,12 @@ const useStyles = makeStyles((theme) => ({
 
   }));
   
-  const Projects = (props) => {
+  export default () => {
     const classes = useStyles();
   
     return (
-        <layout>
+        <Fragment>
+          <Header />
             <Grid container>
                 <h2 className={classes.title}>Chez Edifixio</h2>
             </Grid>
@@ -24,8 +26,7 @@ const useStyles = makeStyles((theme) => ({
 
                 </Grid>
             </Grid>
-        </layout>
+            <Footer />
+        </Fragment>
     );
   }
-  
-  export default Projects;

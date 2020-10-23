@@ -1,35 +1,15 @@
 import React, { Fragment } from "react"
 import { Link } from "gatsby"
 import { makeStyles } from "@material-ui/core/styles"
-import AppBar from "@material-ui/core/AppBar"
-import Button from "@material-ui/core/Button"
-import Toolbar from "@material-ui/core/Toolbar"
 import Typography from "@material-ui/core/Typography"
 import Grid from "@material-ui/core/Grid"
 import { Paper } from "@material-ui/core"
 import sizeMe from "react-sizeme"
-import menuSmall from "../components/menu"
-import { NavLink } from "react-router-dom";
-
-function menuBig(props) {
-  return (
-    <Grid container spacing={2}>
-      <Grid item>
-        <Button component={NavLink} to="/about">
-          About me
-        </Button>
-      </Grid>
-      <Grid item>
-        <Button component={NavLink} to="/projects">
-          Projects
-        </Button>
-      </Grid>
-      <Grid item>
-        <Button component={NavLink} to="/contact">Contact</Button>
-      </Grid>
-    </Grid>
-  )
-}
+import MenuIcon from '@material-ui/icons/Menu';
+import IconButton from '@material-ui/core/IconButton';
+import Menu from '@material-ui/core/Menu';
+import MenuItem from '@material-ui/core/MenuItem';
+import MenuButton from "../components/MenuButton"
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -44,19 +24,28 @@ const useStyles = makeStyles(theme => ({
     color: "#000",
     fontFamily: "Raleway",
     fontWeight: "300",
-    '&:hover': {
-      cursor: 'pointer',
-      color: '#688A5F'
-    }
+    "&:hover": {
+      cursor: "pointer",
+      color: "#688A5F",
+    },
   },
 }))
 
 function Header(props) {
   const classes = useStyles()
 
-  const { width, height } = props.size
+  const { width } = props.size
 
-  const ToRenderMenu = width > 600 ? menuBig : menuSmall
+  const [anchorEl, setAnchorEl] = React.useState(null);
+  
+  const handleClick = (event) => {
+    setAnchorEl(event.currentTarget);
+  };
+
+  const handleClose = () => {
+    setAnchorEl(null);
+  };
+
 
   return (
     <Fragment>
@@ -68,12 +57,52 @@ function Header(props) {
           style={{ padding: "0 35px" }}
         >
           <Grid item>
-            <Typography variant="h6" className={classes.title} component={NavLink} to='/'>
+            <Link to="/" style={{textDecoration: "none",}}>
+            <Typography
+              variant="h6"
+              className={classes.title}
+            >
               Welcome
             </Typography>
+            </Link>
+
           </Grid>
           <Grid item>
-            <ToRenderMenu />
+            {width > 600 ? (
+              <Grid container spacing={5}>
+                <Grid item>
+                  <MenuButton
+                  link="/about/" 
+                  title="About me" />
+                </Grid>
+                <Grid item>
+                <MenuButton
+                  link="/project/" 
+                  title="Project" />
+                </Grid>
+                <Grid item>
+                <MenuButton
+                  link="/contact/" 
+                  title="Contact" />
+                </Grid>
+              </Grid>
+            ) : (
+              <Grid container>
+                <IconButton onClick={handleClick}>
+                  <MenuIcon />
+                </IconButton>
+                <Menu
+                  anchorEl={anchorEl}
+                  //keepMounted
+                  open={Boolean(anchorEl)}
+                  onClose={handleClose}
+                >
+                  <MenuItem onClick={handleClose}>About me</MenuItem>
+                  <MenuItem onClick={handleClose}>Projects</MenuItem>
+                  <MenuItem onClick={handleClose} >Contact</MenuItem>
+                </Menu>
+              </Grid>
+            )}
           </Grid>
         </Grid>
       </Paper>
