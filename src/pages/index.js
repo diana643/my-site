@@ -6,6 +6,7 @@ import selfPhoto from "../assets/pics/photo-me.png"
 import MenuButton from "../components/MenuButton"
 import Header from "../components/header"
 import Footer from "../components/footer"
+import { Link } from "gatsby"
 
 const useStyles = makeStyles(theme => ({
   root: {},
@@ -25,6 +26,9 @@ export default () => {
   return (
     <div className={classes.root}>
       <Header />
+      {/* <Link to="/about/">
+        about
+      </Link> */}
       <Grid container style={{ marginTop: "50px" }}>
         <Grid item xs={12} sm={6} style={{ padding: "0 35px" }}>
           <Grid container>
@@ -44,7 +48,7 @@ export default () => {
           </Grid>
           <Grid container justify="flex-end">
             <MenuButton
-            link="/about/"
+            to="/about/"
             title="Know more about me "
             />
           </Grid>

@@ -72,17 +72,17 @@ function Header(props) {
               <Grid container spacing={5}>
                 <Grid item>
                   <MenuButton
-                  link="/about/" 
+                  to="/about/" 
                   title="About me" />
                 </Grid>
                 <Grid item>
                 <MenuButton
-                  link="/project/" 
+                  to="/project/" 
                   title="Project" />
                 </Grid>
                 <Grid item>
                 <MenuButton
-                  link="/contact/" 
+                  to="/contact/" 
                   title="Contact" />
                 </Grid>
               </Grid>
