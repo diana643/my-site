@@ -18,7 +18,7 @@ const useStyles = makeStyles((theme) => ({
     return (
         <Fragment>
           <Header />
-            <Grid container>
+            <Grid container style={{marginTop:"60px"}}>
                 <h2 className={classes.title}>Chez Edifixio</h2>
             </Grid>
             <Grid container justify='center'>

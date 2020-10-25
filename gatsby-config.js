@@ -12,6 +12,13 @@ module.exports = {
   plugins: 
   [
     {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `src`,
+        path: `${__dirname}/src/`,
+      },
+    },
+    {
       resolve: `gatsby-plugin-google-fonts-v2`,
       options: {
         fonts: [
@@ -19,7 +26,7 @@ module.exports = {
             family: 'Raleway',
             variable: true,
             weights: ['200..900']
-          }
+          },
         ]
       }
     }

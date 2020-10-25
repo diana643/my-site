@@ -19,10 +19,24 @@ function Footer(props) {
   const classes = useStyles()
 
   return (
-    <div style={{ marginTop: "120px", paddingBottom: "50px" }}>
-      <hr
+    <div style={{ marginTop: "150px", paddingBottom: "50px" }}>
+            <hr
         style={{ border: "1px soild #688A5F", width: "100%", margin: "15px 0" }}
       />
+      <Grid container justify="center">
+        <Grid item>
+          <p
+            style={{
+              fontFamily: "Raleway",
+              fontSize: "20px",
+              fontWeight: "400",
+            }}
+          >
+            Contact with me : sian.d.liu@gmail.com
+          </p>
+        </Grid>
+      </Grid>
+
       <Grid container justify="center" spacing={3} alignItems="center">
         <Grid item>
           <a href="https://www.linkedin.com/in/sian-liu-84a9a1170/">
@@ -45,6 +59,7 @@ function Footer(props) {
           </a>
         </Grid>
       </Grid>
+      
       <Grid container justify="center">
         <Grid item>
           <p

@@ -5,10 +5,10 @@ import Typography from "@material-ui/core/Typography"
 import Grid from "@material-ui/core/Grid"
 import { Paper } from "@material-ui/core"
 import sizeMe from "react-sizeme"
-import MenuIcon from '@material-ui/icons/Menu';
-import IconButton from '@material-ui/core/IconButton';
-import Menu from '@material-ui/core/Menu';
-import MenuItem from '@material-ui/core/MenuItem';
+import MenuIcon from "@material-ui/icons/Menu"
+import IconButton from "@material-ui/core/IconButton"
+import Menu from "@material-ui/core/Menu"
+import MenuItem from "@material-ui/core/MenuItem"
 import MenuButton from "../components/MenuButton"
 
 const useStyles = makeStyles(theme => ({
@@ -36,16 +36,15 @@ function Header(props) {
 
   const { width } = props.size
 
-  const [anchorEl, setAnchorEl] = React.useState(null);
-  
-  const handleClick = (event) => {
-    setAnchorEl(event.currentTarget);
-  };
+  const [anchorEl, setAnchorEl] = React.useState(null)
+
+  const handleClick = event => {
+    setAnchorEl(event.currentTarget)
+  }
 
   const handleClose = () => {
-    setAnchorEl(null);
-  };
-
+    setAnchorEl(null)
+  }
 
   return (
     <Fragment>
@@ -57,33 +56,26 @@ function Header(props) {
           style={{ padding: "0 35px" }}
         >
           <Grid item>
-            <Link to="/" style={{textDecoration: "none",}}>
-            <Typography
-              variant="h6"
-              className={classes.title}
-            >
-              Welcome
-            </Typography>
+            <Link to="/" style={{ textDecoration: "none" }}>
+              <Typography variant="h6" className={classes.title}>
+                Welcome
+              </Typography>
             </Link>
-
           </Grid>
           <Grid item>
             {width > 600 ? (
               <Grid container spacing={5}>
                 <Grid item>
-                  <MenuButton
-                  to="/about/" 
-                  title="About me" />
+                  <MenuButton to="/" title="🏠 Home" />
                 </Grid>
                 <Grid item>
-                <MenuButton
-                  to="/project/" 
-                  title="Project" />
+                  <MenuButton to="/about/" title="👩🏼‍💻 About" />
                 </Grid>
                 <Grid item>
-                <MenuButton
-                  to="/contact/" 
-                  title="Contact" />
+                  <MenuButton to="/project/" title="👩🏻‍🎨 Portfolio" />
+                </Grid>
+                <Grid item>
+                  <MenuButton to="/likes/" title="💛 Likes" />
                 </Grid>
               </Grid>
             ) : (
@@ -97,9 +89,18 @@ function Header(props) {
                   open={Boolean(anchorEl)}
                   onClose={handleClose}
                 >
-                  <MenuItem onClick={handleClose}>About me</MenuItem>
-                  <MenuItem onClick={handleClose}>Projects</MenuItem>
-                  <MenuItem onClick={handleClose} >Contact</MenuItem>
+                  <MenuItem onClick={handleClose}>
+                    <MenuButton to="/" title="Home" />
+                  </MenuItem>
+                  <MenuItem onClick={handleClose}>
+                    <MenuButton to="/about/" title="About" />
+                  </MenuItem>
+                  <MenuItem onClick={handleClose}>
+                    <MenuButton to="/project/" title="Portfolio" />
+                  </MenuItem>
+                  <MenuItem onClick={handleClose}>
+                    <MenuButton to="/likes/" title="Likes" />
+                  </MenuItem>
                 </Menu>
               </Grid>
             )}
