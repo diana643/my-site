@@ -5,7 +5,7 @@
  */
 
 module.exports = {
-  pathPrefix: `/project-name`,
+  pathPrefix: `/mysite`,
   siteMetadata: {
     title: `Sian's site`,
   },
