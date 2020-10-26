@@ -23,16 +23,27 @@ function Footer(props) {
             <hr
         style={{ border: "1px soild #688A5F", width: "100%", margin: "15px 0" }}
       />
-      <Grid container justify="center">
+      <Grid container alignItems="center" direction="column">
         <Grid item>
           <p
             style={{
               fontFamily: "Raleway",
               fontSize: "20px",
-              fontWeight: "400",
+              fontWeight: "600",
             }}
           >
-            Contact with me : sian.d.liu@gmail.com
+            Contact with me
+          </p>
+        </Grid>
+        <Grid item style={{marginTop: "-20px"}}>
+          <p
+            style={{
+              fontFamily: "Raleway",
+              fontSize: "18px",
+              fontWeight: "300",
+            }}
+          >
+             sian.d.liu@gmail.com 
           </p>
         </Grid>
       </Grid>

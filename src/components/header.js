@@ -10,6 +10,7 @@ import IconButton from "@material-ui/core/IconButton"
 import Menu from "@material-ui/core/Menu"
 import MenuItem from "@material-ui/core/MenuItem"
 import MenuButton from "../components/MenuButton"
+import Logo from "../assets/pics/logo.png"
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -57,9 +58,16 @@ function Header(props) {
         >
           <Grid item>
             <Link to="/" style={{ textDecoration: "none" }}>
-              <Typography variant="h6" className={classes.title}>
-                Welcome
-              </Typography>
+              <Grid container justify="flex-start" alignItems="center" spacing={1}>
+                <Grid item>
+                  <img src={Logo} style={{ height: "60px" }} />
+                </Grid>
+                <Grid item>
+                  <Typography variant="h6" className={classes.title}>
+                    Welcome
+                  </Typography>
+                </Grid>
+              </Grid>
             </Link>
           </Grid>
           <Grid item>
@@ -90,16 +98,16 @@ function Header(props) {
                   onClose={handleClose}
                 >
                   <MenuItem onClick={handleClose}>
-                    <MenuButton to="/" title="Home" />
+                    <MenuButton to="/" title="🏠 Home" />
                   </MenuItem>
                   <MenuItem onClick={handleClose}>
-                    <MenuButton to="/about/" title="About" />
+                    <MenuButton to="/about/" title="👩🏼‍💻 About" />
                   </MenuItem>
                   <MenuItem onClick={handleClose}>
-                    <MenuButton to="/project/" title="Portfolio" />
+                    <MenuButton to="/project/" title="👩🏻‍🎨 Portfolio" />
                   </MenuItem>
                   <MenuItem onClick={handleClose}>
-                    <MenuButton to="/likes/" title="Likes" />
+                    <MenuButton to="/likes/" title="💛 Likes" />
                   </MenuItem>
                 </Menu>
               </Grid>

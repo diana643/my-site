@@ -4,11 +4,11 @@ import Grid from "@material-ui/core/Grid"
 import Header from "../components/header"
 import Footer from "../components/footer"
 import { Paper } from "@material-ui/core"
+import CircularProgress from "@material-ui/core/CircularProgress"
 
 const useStyles = makeStyles(theme => ({
   root: {
     margin: "100px 10rem",
-    fontFamily: "Raleway",
     [theme.breakpoints.down("sm")]: {
       margin: "65px 2rem",
     },
@@ -86,6 +86,156 @@ export default () => {
         </Grid>
         <Grid container>
           <h3 className={classes.title}>Skills</h3>
+        </Grid>
+        <Grid container justify="space-between" alignItems="center" spacing={3}>
+          <Grid item xs={6} sm={4} md={3}>
+            <Grid container direction="column" alignItems="center">
+              <Grid item>
+                <h3>React</h3>
+              </Grid>
+              <Grid item>
+                <CircularProgress
+                  variant="static"
+                  value={80}
+                  thickness={10}
+                  size={80}
+                  style={{ color: "#B1C8C2" }}
+                />
+              </Grid>
+            </Grid>
+          </Grid>
+          <Grid item xs={6} sm={4} md={3}>
+            <Grid container direction="column" alignItems="center">
+              <Grid item>
+                <h3>Angular</h3>
+              </Grid>
+              <Grid item>
+                <CircularProgress
+                  variant="static"
+                  value={60}
+                  thickness={10}
+                  size={80}
+                  style={{ color: "#B1C8C2" }}
+                />
+              </Grid>
+            </Grid>
+          </Grid>
+          <Grid item xs={6} sm={4} md={3}>
+            <Grid container direction="column" alignItems="center">
+              <Grid item>
+                <h3>Gatsby</h3>
+              </Grid>
+              <Grid item>
+                <CircularProgress
+                  variant="static"
+                  value={65}
+                  thickness={10}
+                  size={80}
+                  style={{ color: "#B1C8C2" }}
+                />
+              </Grid>
+            </Grid>
+          </Grid>
+          <Grid item xs={6} sm={4} md={3}>
+            <Grid container direction="column" alignItems="center">
+              <Grid item>
+                <h3>Node.js</h3>
+              </Grid>
+              <Grid item>
+                <CircularProgress
+                  variant="static"
+                  value={55}
+                  thickness={10}
+                  size={80}
+                  style={{ color: "#B1C8C2" }}
+                />
+              </Grid>
+            </Grid>
+          </Grid>
+                    
+          <Grid item xs={6} sm={4} md={3}>
+            <Grid container direction="column" alignItems="center">
+              <Grid item>
+                <h3>Invison studio</h3>
+              </Grid>
+              <Grid item>
+                <CircularProgress
+                  variant="static"
+                  value={82}
+                  thickness={10}
+                  size={80}
+                  style={{ color: "#B1C8C2" }}
+                />
+              </Grid>
+            </Grid>
+          </Grid>
+                    
+          <Grid item xs={6} sm={4} md={3}>
+            <Grid container direction="column" alignItems="center">
+              <Grid item>
+                <h3>Figma</h3>
+              </Grid>
+              <Grid item>
+                <CircularProgress
+                  variant="static"
+                  value={65}
+                  thickness={10}
+                  size={80}
+                  style={{ color: "#B1C8C2" }}
+                />
+              </Grid>
+            </Grid>
+          </Grid>
+                    
+          <Grid item xs={6} sm={4} md={3}>
+            <Grid container direction="column" alignItems="center">
+              <Grid item>
+                <h3>Sketch</h3>
+              </Grid>
+              <Grid item>
+                <CircularProgress
+                  variant="static"
+                  value={75}
+                  thickness={10}
+                  size={80}
+                  style={{ color: "#B1C8C2" }}
+                />
+              </Grid>
+            </Grid>
+          </Grid>
+          <Grid item xs={6} sm={4} md={3}>
+            <Grid container direction="column" alignItems="center">
+              <Grid item>
+                <h3>ES6</h3>
+              </Grid>
+              <Grid item>
+                <CircularProgress
+                  variant="static"
+                  value={75}
+                  thickness={10}
+                  size={80}
+                  style={{ color: "#B1C8C2" }}
+                />
+              </Grid>
+            </Grid>
+          </Grid>
+
+          <Grid item xs={6} sm={4} md={3}>
+            <Grid container direction="column" alignItems="center">
+              <Grid item>
+                <h3>git</h3>
+              </Grid>
+              <Grid item>
+                <CircularProgress
+                  variant="static"
+                  value={75}
+                  thickness={10}
+                  size={80}
+                  style={{ color: "#B1C8C2" }}
+                />
+              </Grid>
+            </Grid>
+          </Grid>
         </Grid>
       </div>
       <Footer />

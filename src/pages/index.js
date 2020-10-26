@@ -33,10 +33,10 @@ export default () => {
         <Grid item xs={12} sm={6} style={{ padding: "0 35px" }}>
           <Grid container>
             <Fade left>
-              <h1 style={{ fontFamily: "Raleway" }}>
+              <h1>
                 Hello there! This is Sian.
               </h1>
-              <h2 style={{ fontFamily: "Raleway", fontWeight: "300" }}>
+              <h2 style={{ fontWeight: "300" }}>
                 I come from Beijing, and now based in Paris. I love UI/UX
                 design, Web development. And also I have a podcast{" "}
                 <a className={classes.link} href="https://anchor.fm/diana643">

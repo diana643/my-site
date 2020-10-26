@@ -23,69 +23,76 @@ const tileData = [
   {
     src: img001,
     width: 16,
-    height: 9
+    height: 9,
   },
   {
     src: img002,
     width: 16,
-    height: 9
+    height: 9,
   },
   {
     src: img003,
     width: 9,
-    height: 16
+    height: 16,
   },
   {
     src: img004,
     width: 16,
-    height: 9
+    height: 9,
   },
   {
     src: img005,
     width: 16,
-    height: 9
+    height: 9,
   },
   {
     src: img006,
     width: 9,
-    height: 16
+    height: 16,
   },
   {
     src: img007,
     width: 16,
-    height: 9
+    height: 9,
   },
   {
     src: img008,
     width: 16,
-    height: 9
+    height: 9,
   },
   {
     src: img009,
     width: 16,
-    height: 9
+    height: 9,
   },
   {
     src: img010,
     width: 9,
-    height: 16
+    height: 16,
   },
   {
     src: img011,
     width: 16,
-    height: 9
+    height: 9,
   },
   {
     src: img012,
     width: 9,
-    height: 16
+    height: 16,
   },
 ]
 
 const useStyles = makeStyles(theme => ({
-  title: {
+  root: {
+    margin: "100px 10rem",
     fontFamily: "Raleway",
-    margin: "0 35px",
+    [theme.breakpoints.down("sm")]: {
+      margin: "65px 2rem",
+    },
+  },
+  title: {
+    
+    
   },
   gridList: {
     width: 500,
@@ -98,14 +105,16 @@ export default () => {
 
   return (
     <div>
-      <Link to="/"></Link>
       <Header />
-      <Grid container>
-        <h2 className={classes.title}>Current coup de cœur</h2>
-      </Grid>
-      <Grid container justify="center" style={{margin: "50px 0"}}>
-        <Gallery photos={tileData} />
-      </Grid>
+      <div className={classes.root}>
+        <Grid container style={{ margin: "80px 0" }}>
+          <h1 className={classes.title}>Current coups de cœur</h1>
+        </Grid>
+        <Grid container justify="center" style={{ margin: "50px 0" }}>
+          <Gallery photos={tileData} />
+        </Grid>
+      </div>
+
       <Footer />
     </div>
   )
