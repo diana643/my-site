@@ -3,7 +3,6 @@ import { makeStyles } from "@material-ui/core/styles"
 import Grid from "@material-ui/core/Grid"
 import Header from "../components/header"
 import Footer from "../components/footer"
-import { Paper } from "@material-ui/core"
 import CircularProgress from "@material-ui/core/CircularProgress"
 
 const useStyles = makeStyles(theme => ({

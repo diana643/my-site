@@ -6,7 +6,6 @@ import selfPhoto from "../assets/pics/photo-me.png"
 import MenuButton from "../components/MenuButton"
 import Header from "../components/header"
 import Footer from "../components/footer"
-import { Link } from "gatsby"
 
 const useStyles = makeStyles(theme => ({
   root: {},
@@ -54,7 +53,7 @@ export default () => {
           </Grid>
         </Grid>
         <Grid item xs={12} sm={6}>
-          <Grid container justify="center" alignItems="flex-begin">
+          <Grid container justify="center" alignItems="flex-start">
             <img src={selfPhoto} alt="me" style={{ width: "65%", height: '65%'}} />
           </Grid>
         </Grid>
