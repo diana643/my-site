@@ -10,7 +10,7 @@ const useStyles = makeStyles(theme => ({
   icon: {
     color: "#666",
     "&:hover": {
-      color: "#000",
+      color: "#688A5F",
     },
   },
 }))

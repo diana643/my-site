@@ -5,7 +5,7 @@
  */
 
 module.exports = {
-  pathPrefix: `diana643.github.io/my-site`,
+  // pathPrefix: `diana643.github.io/my-site/`,
   siteMetadata: {
     title: `Sian's site`,
   },
