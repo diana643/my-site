@@ -1,11 +1,7 @@
-import React, { Fragment } from "react"
-import { Link } from "gatsby"
+import React from "react"
 import { makeStyles } from "@material-ui/core/styles"
 import Card from "@material-ui/core/Card"
-import CardActionArea from "@material-ui/core/CardActionArea"
-import CardActions from "@material-ui/core/CardActions"
 import CardContent from "@material-ui/core/CardContent"
-import CardMedia from "@material-ui/core/CardMedia"
 import { Grid, Button, Dialog } from "@material-ui/core"
 import DialogContent from "@material-ui/core/DialogContent"
 
@@ -32,7 +28,7 @@ const useStyles = makeStyles(theme => ({
   title: {
     fontFamily: "Raleway",
     fontSize: "25px",
-    fontWeight: "400",
+    fontWeight: "600",
   },
   btn: {
     color: "#fff",

@@ -13,6 +13,19 @@ const useStyles = makeStyles(theme => ({
       color: "#688A5F",
     },
   },
+  title: {
+    fontSize:"20px",
+    fontWeight:"500",
+  },
+  link: {
+    textDecoration: "none",
+    color: "#000",
+    transition: "0.2s ease",
+    "&:hover": {
+      backgroundColor: "#688A5F",
+      color: "#f8f8f8",
+    },
+  },
 }))
 
 function Footer(props) {
@@ -25,26 +38,15 @@ function Footer(props) {
       />
       <Grid container alignItems="center" direction="column">
         <Grid item>
-          <p
-            style={{
-              fontFamily: "Raleway",
-              fontSize: "20px",
-              fontWeight: "600",
-            }}
-          >
+          <p className={classes.title}>
             Contact with me
           </p>
         </Grid>
         <Grid item style={{marginTop: "-20px"}}>
-          <p
-            style={{
-              fontFamily: "Raleway",
-              fontSize: "18px",
-              fontWeight: "300",
-            }}
-          >
+          <a className={classes.link}>     
              sian.d.liu@gmail.com 
-          </p>
+          </a>
+
         </Grid>
       </Grid>
 

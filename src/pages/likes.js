@@ -90,8 +90,15 @@ const useStyles = makeStyles(theme => ({
     },
   },
   title: {
-    
-    
+    WebkitTextStroke: "1px #000",
+    color: "#f8f8f8",
+    fontSize: "40px",
+    fontFamily: "Roboto",
+    transition: "0.1s",
+    "&:hover": {
+      color: "#688A5F",
+      WebkitTextStroke: "1px #688A5F",
+    }
   },
   gridList: {
     width: 500,
@@ -106,7 +113,7 @@ export default () => {
     <div>
       <Header />
       <div className={classes.root}>
-        <Grid container style={{ margin: "80px 0" }}>
+        <Grid container style={{ margin: "80px 0" }} justify="center">
           <h1 className={classes.title}>Current coups de cœur</h1>
         </Grid>
         <Grid container justify="center" style={{ margin: "50px 0" }}>

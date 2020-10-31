@@ -9,14 +9,26 @@ import Footer from "../components/footer"
 
 const useStyles = makeStyles(theme => ({
   root: {},
+  title: {
+    WebkitTextStroke: "1px #000",
+    color: "#f8f8f8",
+    fontSize: "40px",
+    fontFamily: "Roboto",
+    transition: "0.1s",
+    "&:hover": {
+      color: "#688A5F",
+      WebkitTextStroke: "1px #688A5F",
+    }
+  },
   link: {
     textDecoration: "none",
     color: "#000",
+    transition: "0.2s ease",
     "&:hover": {
-      borderBottom: "3px solid #688A5F",
+      backgroundColor: "#688A5F",
+      color: "#f8f8f8",
     },
   },
-  
 }))
 
 export default () => {
@@ -32,7 +44,7 @@ export default () => {
         <Grid item xs={12} sm={6} style={{ padding: "0 35px" }}>
           <Grid container>
             <Fade left>
-              <h1>
+              <h1 className={classes.title}>
                 Hello there! This is Sian.
               </h1>
               <h2 style={{ fontWeight: "300" }}>
@@ -46,15 +58,16 @@ export default () => {
             </Fade>
           </Grid>
           <Grid container justify="flex-end">
-            <MenuButton
-            to="/about/"
-            title="Know more about me "
-            />
+            <MenuButton to="/about/" title="Know more about me " />
           </Grid>
         </Grid>
         <Grid item xs={12} sm={6}>
           <Grid container justify="center" alignItems="flex-start">
-            <img src={selfPhoto} alt="me" style={{ width: "65%", height: '65%'}} />
+            <img
+              src={selfPhoto}
+              alt="me"
+              style={{ width: "65%", height: "65%" }}
+            />
           </Grid>
         </Grid>
       </Grid>

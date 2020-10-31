@@ -29,6 +29,11 @@ module.exports = {
             variable: true,
             weights: ['200..900']
           },
+          {
+            family: 'Roboto Slab',
+            variable: true,
+            weights: ['200..900']
+          }
         ]
       }
     }
