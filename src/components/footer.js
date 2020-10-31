@@ -14,10 +14,11 @@ const useStyles = makeStyles(theme => ({
     },
   },
   title: {
-    fontSize:"20px",
+    fontSize:"25px",
     fontWeight:"500",
   },
   link: {
+    font:"20px",
     textDecoration: "none",
     color: "#000",
     transition: "0.2s ease",
@@ -32,25 +33,26 @@ function Footer(props) {
   const classes = useStyles()
 
   return (
-    <div style={{ marginTop: "150px", paddingBottom: "50px" }}>
-            <hr
+    <div style={{ marginTop: "150px", paddingBottom: "25px"}}>
+           <div style={{height:"1px", width:"100%",backgroundColor:"#688A5F"}}></div>
+            {/* <hr
         style={{ border: "1px soild #688A5F", width: "100%", margin: "15px 0" }}
-      />
+      /> */}
       <Grid container alignItems="center" direction="column">
         <Grid item>
           <p className={classes.title}>
             Contact with me
           </p>
         </Grid>
-        <Grid item style={{marginTop: "-20px"}}>
-          <a className={classes.link}>     
-             sian.d.liu@gmail.com 
+        <Grid item>
+          <a herf="mailto: sian.d.liu@gmail.com" className={classes.link}>     
+             SIAN.D.LIU@GMAIL.COM 
           </a>
 
         </Grid>
       </Grid>
 
-      <Grid container justify="center" spacing={3} alignItems="center">
+      <Grid container justify="center" spacing={4} alignItems="center" style={{marginTop:"10px"}}>
         <Grid item>
           <a href="https://www.linkedin.com/in/sian-liu-84a9a1170/">
             <LinkedInIcon size="small" className={classes.icon} />
@@ -78,7 +80,7 @@ function Footer(props) {
           <p
             style={{
               fontFamily: "Raleway",
-              fontSize: "18px",
+              fontSize: "13px",
               fontWeight: "300",
             }}
           >
