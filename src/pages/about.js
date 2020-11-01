@@ -111,7 +111,7 @@ export default () => {
             <Grid container>
               <p className={classes.context}>
                 My internships have allowed me to experience two very different
-                working environments : In 2017, I got my first taste of
+                working environments : In 2019, I got my first taste of
                 front-end development at a Paris-based Chinese language learning
                 start-up named Wiithy. In 2020, for my graduation internship, I
                 further improved my development skills by working at Edifixio, a
