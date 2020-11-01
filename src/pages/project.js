@@ -11,27 +11,27 @@ const imgs = [
     src: require("../assets/pics/projects/toolbox_cover.jpg"),
     title: "Toolbox",
     description:
-      "Toolbox is a applications storage website which is designed by material design and developped by React",
+      "I designed and developed the front-end side of Toolbox, an internal applications storage website, using Material Design and React.js",
   },
   {
     id: "2",
     src: require("../assets/pics/projects/aws_cover.jpg"),
     title: "Aws storage",
-    description: "It's a files management website and designed by semantic UI",
+    description: "A files management website, designed using Semantic UI",
   },
   {
     id: "3",
     src: require("../assets/pics/projects/table_cover.jpg"),
     title: "Salesforce certifiations",
     description:
-      "This is a internal salesforce tool for user checking their salesforce certification score, designed by lighting design",
+      "This is an internal Salesforce tool allowing the user to check their Salesforce certification score, designed using lighting design",
   },
   {
     id: "4",
     src: require("../assets/pics/projects/stafing_cover.jpg"),
     title: "Stafing",
     description:
-      "It's a mobile version of internal project managment tool on salesforce plateform ",
+      "I designed a mobile version of an internal project management tool on the Salesforce plateform ",
   },
 ]
 const useStyles = makeStyles(theme => ({
@@ -72,9 +72,9 @@ export default () => {
         </Grid>
         <Grid container style={{marginBottom:"30px"}}>
           <p className={classes.context}>
-            During my 6 months internship in Edifixio, I have done with a lots
-            of projects including development and design. By using React,
-            material design and invision studio
+            During my internship at Edifixio, I have worked on a variety 
+            of projects including both development and design, using React,
+            Material Design as well as Invision Studio
           </p>
         </Grid>
         <Grid container justify="space-between" spacing={4}>
@@ -89,14 +89,15 @@ export default () => {
           ))}
         </Grid>
         <Grid container style={{ margin: "60px 0 30px 0" }} justify="center">
-          <h1 className={classes.title}>Personal perject</h1>
+          <h1 className={classes.title}>Personal project</h1>
         </Grid>
         <Grid container justify="space-between" spacing={4}>
           <Grid item xs={12} sm={6} md={4}>
             <ProjectCard
               src={require("../assets/pics/projects/my_website.png")}
               title="Personal website"
-              description="This is my personal website, design and develop by myself using Gatsby.js as the frameworks"
+              description="This is my personal website, designed and developed using Gatsby.js. 
+              Unless something has gone terribly wrong, you are currently on it."
             />
           </Grid>
         </Grid>

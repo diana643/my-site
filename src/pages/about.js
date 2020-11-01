@@ -50,12 +50,12 @@ export default () => {
           <Grid>
             <Grid container>
               <p className={classes.context}>
-                Hi, my name is Sian. Currently base in Paris. New graduate from
-                engineer school. Always loving life. Always curieuse. Like web
-                development and UI/UX design. Vision art and music are my
-                passion, having a music reference blog in weChat page, and a
-                podcast named Liang Qiang. Also, had hosted two epsoides podcast
-                of normie.fm.
+                Hi, my name is Sian. I'm a recent engineering school graduate, currently based in Paris
+                . I have a broad range of interests, and a mix of technical and creative skills that allows me to excel in web development and UI/UX design
+                . Visual arts and music are my main
+                passions. I express them by drawing as well as maintaining a music Wechat blog and hosting a podcast, Liang Qiang, and participating in another one, titled Normie.fm.
+                I am also an inveterate fan of all things fluffy, from rabbits 🐰 to alpacas 🦙.
+                
               </p>
             </Grid>
             <Grid container justify="center">
@@ -63,12 +63,12 @@ export default () => {
             </Grid>
             <Grid container>
               <p className={classes.context}>
-                Graduated from Beijing university of technology and Efrei Paris.
-                Got my computer science bachorlor degree in 2018 and my master
-                degree of imagreie and vitural reality in 2020. And during my
-                study, I just find my interest in design, and front-end
-                development. Three years study in France also let me gain the
-                good ability in speakung French.
+                I am a graduate of the Beijing University of Technology and EFREI Paris.
+                I got my Computer Science Bachelor's degree in 2018 and my Master's degree
+                in Imaging and Virtual Reality in 2020. During my
+                studies, I discovered a strong interest for design and front-end
+                development. After three years of studies in France, I also acquired a good working knowledge of French, in 
+                addition to my native Mandarin and fluent English. 
               </p>
             </Grid>
             <Grid container justify="center">
@@ -76,79 +76,16 @@ export default () => {
             </Grid>
             <Grid container>
               <p className={classes.context}>
-                I have worked in a Chinese language learning start-up called
-                Wiithy in 2017 and worked in Edifixio as a web designer and
-                front-end developper for six months during my master 2. I like
-                working in the different and dynamic environment and know new
-                people. And familar with serveal front-end framework and design
-                tools. Used to work in agile development. And now building my
-                personal website(The one you're reading at!).
+                My internships have allowed me to experience two very different working environments :
+                In 2017, I got my first taste of front-end development at a Paris-based Chinese language learning start-up named Wiithy.
+                In 2020, for my graduation internship, I further improved my development skills by working at Edifixio, a French IT consulting 
+                company. I thrive in different and dynamic environments, and enjoy meeting and cooperating with new
+                people. I am familar with several front-end frameworks and design
+                tools, and I am used to working with the Agile method. To demonstrate my ability, I am now building my
+                personal website,and as you can see it's going pretty well! 😜 
               </p>
             </Grid>
           </Grid>
-          {/* <Grid item xs={12} sm={6}>
-            <Grid container>
-              <Timeline align="alternate">
-                <TimelineItem>
-                  <TimelineSeparator>
-                    <TimelineDot style={{ color: "#688A5F" }} />
-                    <TimelineConnector />
-                  </TimelineSeparator>
-                  <TimelineContent>
-                    <Paper style={{ padding: "10px 25px",textAlign:"center"}}>
-                      <p>Beijing university of technology</p>
-                    </Paper>
-                  </TimelineContent>
-                </TimelineItem>
-                <TimelineItem>
-                  <TimelineSeparator>
-                    <TimelineDot style={{ color: "#688A5F" }} />
-                    <TimelineConnector />
-                  </TimelineSeparator>
-                  <TimelineContent>
-                    <Paper style={{ padding: "10px 25px",textAlign:"center" }}>
-                      <p>Efrei Paris</p>
-                    </Paper>
-                  </TimelineContent>
-                </TimelineItem>
-                <TimelineItem>
-                  <TimelineSeparator>
-                    <TimelineDot style={{ color: "#688A5F" }} />
-                  </TimelineSeparator>
-                  <TimelineContent>
-                    <Paper style={{ padding: "10px 25px",textAlign:"center" }}>
-                      <p>Efrei Paris Master</p>
-                    </Paper>
-                  </TimelineContent>
-                </TimelineItem>
-              </Timeline>
-            </Grid>
-            <Grid container>
-              <Timeline align="alternate">
-                <TimelineItem>
-                  <TimelineSeparator>
-                    <TimelineDot style={{ color: "#688A5F" }} />
-                    <TimelineConnector />
-                  </TimelineSeparator>
-                  <TimelineContent>
-                    <Paper style={{ padding: "10px 25px",textAlign:"center" }}>
-                      <p>Witthy</p>
-                    </Paper>
-                  </TimelineContent>
-                </TimelineItem>
-                <TimelineItem>
-                  <TimelineSeparator>
-                    <TimelineDot style={{ color: "#688A5F" }} />
-                  </TimelineSeparator>
-                  <TimelineContent>
-                    <Paper style={{ padding: "10px 25px",textAlign:"center" }}>
-                      <p>Edifixio</p>
-                    </Paper>
-                  </TimelineContent>
-                </TimelineItem>
-              </Timeline>
-            </Grid>
-          </Grid> */}
         </Grid>
 
         <Grid container justify="center">

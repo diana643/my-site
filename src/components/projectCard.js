@@ -54,7 +54,7 @@ function ProjectCard(props) {
       <div className="backWrap">
         <Grid container justify="center" alignItems="center" direction="column">
           <Grid item>
-            <p style={{ color: "#eee", textAlign: "center" }}>
+            <p style={{ color: "#eee", textAlign: "center",padding: "0 10px"}}>
               {props.description}
             </p>
           </Grid>

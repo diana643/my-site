@@ -114,7 +114,7 @@ export default () => {
       <Header />
       <div className={classes.root}>
         <Grid container style={{ margin: "80px 0" }} justify="center">
-          <h1 className={classes.title}>Current coups de cœur</h1>
+          <h1 className={classes.title}>My Gallery</h1>
         </Grid>
         <Grid container justify="center" style={{ margin: "50px 0" }}>
           <Gallery photos={tileData} />

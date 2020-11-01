@@ -45,11 +45,10 @@ export default () => {
           <Grid container>
             <Fade left>
               <h1 className={classes.title}>
-                Hello there! This is Sian.
+                Hello there! I'm Sian.
               </h1>
               <h2 style={{ fontWeight: "300",letterSpacing: ".2rem", }}>
-                I come from Beijing, and now based in Paris. I love UI/UX
-                design, Web development. And also I have a podcast{" "}
+                Beijing born and raised, I am now based in Paris. I'm a web developper and UI/UX designer. I am also running a podcast, {" "}
                 <a className={classes.link} href="https://anchor.fm/diana643">
                   {" "}
                   Liang Qiang.
@@ -58,7 +57,7 @@ export default () => {
             </Fade>
           </Grid>
           <Grid container justify="flex-end" style={{marginTop:"15px"}}>
-            <MenuButton to="/about/" title="Know more about me " />
+            <MenuButton to="/about/" title="More about me" />
           </Grid>
         </Grid>
         <Grid item xs={12} sm={6}>
