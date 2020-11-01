@@ -9,16 +9,24 @@ import LinkedInIcon from "@material-ui/icons/LinkedIn"
 const useStyles = makeStyles(theme => ({
   icon: {
     color: "#666",
+    fontSize: "25px",
     "&:hover": {
       color: "#688A5F",
     },
   },
   title: {
-    fontSize:"25px",
-    fontWeight:"500",
+    WebkitTextStroke: ".8px #000",
+    fontFamily: "Roboto",
+    fontSize: "24px",
+    fontWeight: "900",
+    color: "#FFFAF4",
+    "&:hover": {
+      color: "#688A5F",
+      WebkitTextStroke: "1px #688A5F",
+    },
   },
   link: {
-    font:"20px",
+    font: "16px",
     textDecoration: "none",
     color: "#000",
     transition: "0.2s ease",
@@ -33,48 +41,57 @@ function Footer(props) {
   const classes = useStyles()
 
   return (
-    <div style={{ marginTop: "150px", paddingBottom: "25px"}}>
-           <div style={{height:"1px", width:"100%",backgroundColor:"#688A5F"}}></div>
-            {/* <hr
-        style={{ border: "1px soild #688A5F", width: "100%", margin: "15px 0" }}
-      /> */}
-      <Grid container alignItems="center" direction="column">
+    <div style={{ margin: "150px 50px 0 50px", paddingBottom: "25px" }}>
+      <Grid container justify="center">
+        <div
+          style={{ height: "1px", width: "100%", backgroundColor: "#FEE3C5" }}
+        ></div>
+      </Grid>
+      <Grid container alignItems="center" justify="center">
         <Grid item>
-          <p className={classes.title}>
-            Contact with me
-          </p>
-        </Grid>
-        <Grid item>
-          <a herf="mailto: sian.d.liu@gmail.com" className={classes.link}>     
-             SIAN.D.LIU@GMAIL.COM 
-          </a>
-
+          <p className={classes.title}>Contact</p>
         </Grid>
       </Grid>
-
-      <Grid container justify="center" spacing={4} alignItems="center" style={{marginTop:"10px"}}>
+      <Grid container alignItems="center" justify="center">
+        <Grid item>
+          <a herf="mailto: sian.d.liu@gmail.com" className={classes.link}>
+            SIAN.D.LIU@GMAIL.COM
+          </a>
+        </Grid>
+      </Grid>
+      <Grid container alignItems="center" justify="center">
+        <Grid item>
+          <p className={classes.link}>(+33) 6 65 51 45 88</p>
+        </Grid>
+      </Grid>
+      <Grid container alignItems="center" justify="center">
+        <Grid item>
+          <p className={classes.title}>Follow me</p>
+        </Grid>
+      </Grid>
+      <Grid container justify="center" spacing={4} alignItems="center">
         <Grid item>
           <a href="https://www.linkedin.com/in/sian-liu-84a9a1170/">
-            <LinkedInIcon size="small" className={classes.icon} />
+            <LinkedInIcon className={classes.icon} />
           </a>
         </Grid>
         <Grid item>
           <a href="https://www.instagram.com/diana643/">
-            <InstagramIcon size="small" className={classes.icon} />
+            <InstagramIcon className={classes.icon} />
           </a>
         </Grid>
         <Grid item>
           <a href="https://twitter.com/643diana643">
-            <TwitterIcon size="small" className={classes.icon} />
+            <TwitterIcon className={classes.icon} />
           </a>
         </Grid>
         <Grid item>
           <a href="https://github.com/diana643">
-            <GitHubIcon size="small" className={classes.icon} />
+            <GitHubIcon className={classes.icon} />
           </a>
         </Grid>
       </Grid>
-      
+
       <Grid container justify="center">
         <Grid item>
           <p

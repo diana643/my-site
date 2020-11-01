@@ -47,7 +47,7 @@ export default () => {
               <h1 className={classes.title}>
                 Hello there! This is Sian.
               </h1>
-              <h2 style={{ fontWeight: "300" }}>
+              <h2 style={{ fontWeight: "300",letterSpacing: ".2rem", }}>
                 I come from Beijing, and now based in Paris. I love UI/UX
                 design, Web development. And also I have a podcast{" "}
                 <a className={classes.link} href="https://anchor.fm/diana643">
@@ -57,7 +57,7 @@ export default () => {
               </h2>
             </Fade>
           </Grid>
-          <Grid container justify="flex-end">
+          <Grid container justify="flex-end" style={{marginTop:"15px"}}>
             <MenuButton to="/about/" title="Know more about me " />
           </Grid>
         </Grid>

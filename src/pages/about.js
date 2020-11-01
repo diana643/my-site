@@ -5,7 +5,6 @@ import Header from "../components/header"
 import Footer from "../components/footer"
 import CircularProgress from "@material-ui/core/CircularProgress"
 
-
 const useStyles = makeStyles(theme => ({
   root: {
     margin: "100px 10rem",
@@ -15,7 +14,7 @@ const useStyles = makeStyles(theme => ({
   },
   title: {
     WebkitTextStroke: "1px #000",
-    color: "#f8f8f8",
+    color: "#FFFAF4",
     fontSize: "40px",
     fontFamily: "Roboto",
     transition: "0.1s",
@@ -43,7 +42,6 @@ export default () => {
       <div className={classes.root}>
         <Grid container justify="center">
           <h1 className={classes.title}>About me</h1>
-          
         </Grid>
         {/* <Grid container justify="center" style={{margin:"-10px 0 20px 0"}}>
         <div style={{width:"160px",height:"5px",backgroundColor:"#EAE691"}}></div>

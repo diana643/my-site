@@ -91,7 +91,7 @@ const useStyles = makeStyles(theme => ({
   },
   title: {
     WebkitTextStroke: "1px #000",
-    color: "#f8f8f8",
+    color: "#FFFAF4",
     fontSize: "40px",
     fontFamily: "Roboto",
     transition: "0.1s",
