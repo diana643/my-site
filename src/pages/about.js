@@ -31,6 +31,17 @@ const useStyles = makeStyles(theme => ({
   skill: {
     color: "#EAE691",
   },
+  link: {
+    fontWeight:"500",
+    textDecoration: "none",
+    color: "#000",
+    transition: "0.2s ease",
+    "&:hover": {
+      backgroundColor: "#688A5F",
+      color: "#f8f8f8",
+      fontWeight:"500",
+    },
+  },
 }))
 
 export default () => {
@@ -50,12 +61,34 @@ export default () => {
           <Grid>
             <Grid container>
               <p className={classes.context}>
-                Hi, my name is Sian. I'm a recent engineering school graduate, currently based in Paris
-                . I have a broad range of interests, and a mix of technical and creative skills that allows me to excel in web development and UI/UX design
-                . Visual arts and music are my main
-                passions. I express them by drawing as well as maintaining a music Wechat blog and hosting a podcast, Liang Qiang, and participating in another one, titled Normie.fm.
-                I am also an inveterate fan of all things fluffy, from rabbits 🐰 to alpacas 🦙.
-                
+                Hi, my name is Sian. I'm a recent engineering school graduate,
+                currently based in Paris . I have a broad range of interests,
+                and a mix of technical and creative skills that allows me to
+                excel in web development and UI/UX design . Visual arts and
+                music are my main passions. I express them by drawing as well as
+                maintaining a
+                <a
+                  className={classes.link}
+                  href="https://mp.weixin.qq.com/s?__biz=MzU1NDk1NzY3MQ==&mid=2247483882&idx=1&sn=686af7bc2343cad855d03295f6a302d3&chksm=fbdaefe2ccad66f46b0bc7eeaea1295746cefd8c8d9a4ce942abd497a384f775800eb79008ab&token=624714504&lang=zh_CN#rd"
+                >
+                  {" "}
+                  music Wechat blog
+                </a>
+                and hosting a podcast,
+                <a className={classes.link} href="https://anchor.fm/diana643">
+                  {" "}
+                  Liang Qiang
+                </a>
+                .and participating in another one, titled
+                <a
+                  className={classes.link}
+                  href="https://www.mixcloud.com/normiefm/normiefm-003-diana-l/"
+                >
+                  {" "}
+                  Normie.fm
+                </a>{" "}
+                . I am also an inveterate fan of all things fluffy, from rabbits
+                🐰 to alpacas 🦙.
               </p>
             </Grid>
             <Grid container justify="center">
@@ -63,12 +96,13 @@ export default () => {
             </Grid>
             <Grid container>
               <p className={classes.context}>
-                I am a graduate of the Beijing University of Technology and EFREI Paris.
-                I got my Computer Science Bachelor's degree in 2018 and my Master's degree
-                in Imaging and Virtual Reality in 2020. During my
-                studies, I discovered a strong interest for design and front-end
-                development. After three years of studies in France, I also acquired a good working knowledge of French, in 
-                addition to my native Mandarin and fluent English. 
+                I am a graduate of the Beijing University of Technology and
+                EFREI Paris. I got my Computer Science Bachelor's degree in 2018
+                and my Master's degree in Imaging and Virtual Reality in 2020.
+                During my studies, I discovered a strong interest for design and
+                front-end development. After three years of studies in France, I
+                also acquired a good working knowledge of French, in addition to
+                my native Mandarin and fluent English.
               </p>
             </Grid>
             <Grid container justify="center">
@@ -76,13 +110,17 @@ export default () => {
             </Grid>
             <Grid container>
               <p className={classes.context}>
-                My internships have allowed me to experience two very different working environments :
-                In 2017, I got my first taste of front-end development at a Paris-based Chinese language learning start-up named Wiithy.
-                In 2020, for my graduation internship, I further improved my development skills by working at Edifixio, a French IT consulting 
-                company. I thrive in different and dynamic environments, and enjoy meeting and cooperating with new
-                people. I am familar with several front-end frameworks and design
-                tools, and I am used to working with the Agile method. To demonstrate my ability, I am now building my
-                personal website,and as you can see it's going pretty well! 😜 
+                My internships have allowed me to experience two very different
+                working environments : In 2017, I got my first taste of
+                front-end development at a Paris-based Chinese language learning
+                start-up named Wiithy. In 2020, for my graduation internship, I
+                further improved my development skills by working at Edifixio, a
+                French IT consulting company. I thrive in different and dynamic
+                environments, and enjoy meeting and cooperating with new people.
+                I am familar with several front-end frameworks and design tools,
+                and I am used to working with the Agile method. To demonstrate
+                my ability, I am now building my personal website,and as you can
+                see it's going pretty well! 😜
               </p>
             </Grid>
           </Grid>
