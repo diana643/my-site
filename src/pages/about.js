@@ -49,14 +49,14 @@ export default () => {
 
   return (
     <div>
+      <div>
       <Header />
+      </div>
+     
       <div className={classes.root}>
         <Grid container justify="center">
           <h1 className={classes.title}>About me</h1>
         </Grid>
-        {/* <Grid container justify="center" style={{margin:"-10px 0 20px 0"}}>
-        <div style={{width:"160px",height:"5px",backgroundColor:"#EAE691"}}></div>
-        </Grid> */}
         <Grid container>
           <Grid>
             <Grid container>
@@ -88,7 +88,7 @@ export default () => {
                   Normie.fm
                 </a>{" "}
                 . I am also an inveterate fan of all things fluffy, from rabbits
-                🐰 to alpacas 🦙.
+                to alpacas.
               </p>
             </Grid>
             <Grid container justify="center">
@@ -120,7 +120,7 @@ export default () => {
                 I am familar with several front-end frameworks and design tools,
                 and I am used to working with the Agile method. To demonstrate
                 my ability, I am now building my personal website,and as you can
-                see it's going pretty well! 😜
+                see it's going pretty well! 
               </p>
             </Grid>
           </Grid>

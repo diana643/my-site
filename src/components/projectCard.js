@@ -89,7 +89,7 @@ function ProjectCard(props) {
         <DialogContent>
           <Grid container justify="center" alignItems="center">
             <Grid item>
-              <img src={props.src} style={{ width: "100%" }} />
+              <img src={props.src} style={{ width: "100%" }} alt="" />
             </Grid>
           </Grid>
         </DialogContent>

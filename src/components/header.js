@@ -60,7 +60,7 @@ function Header(props) {
             <Link to="/" style={{ textDecoration: "none" }}>
               <Grid container justify="flex-start" alignItems="center">
                 <Grid item>
-                  <img src={Logo} style={{ height: "60px" }} />
+                  <img src={Logo} style={{ height: "60px" }} alt="" />
                 </Grid>
                 <Grid item>
                   <Typography variant="h6" className={classes.title}>
