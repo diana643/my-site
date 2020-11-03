@@ -54,7 +54,7 @@ function Footer(props) {
       </Grid>
       <Grid container alignItems="center" justify="center">
         <Grid item>
-          <a herf="mailto: sian.d.liu@gmail.com" className={classes.link}>
+          <a herf="mailto:sian.d.liu@gmail.com" className={classes.link}>
             SIAN.D.LIU@GMAIL.COM
           </a>
         </Grid>

@@ -77,7 +77,7 @@ function Header(props) {
                   <MenuButton to="/" title="🏠 Home" />
                 </Grid>
                 <Grid item>
-                  <MenuButton to="/about/" title="👩🏼‍💻 About" />
+                  <MenuButton to="/aboutme/" title="👩🏼‍💻 About" />
                 </Grid>
                 <Grid item>
                   <MenuButton to="/project/" title="👩🏻‍🎨 Portfolio" />
@@ -101,7 +101,7 @@ function Header(props) {
                     <MenuButton to="/" title="🏠 Home" />
                   </MenuItem>
                   <MenuItem onClick={handleClose}>
-                    <MenuButton to="/about/" title="👩🏼‍💻 About" />
+                    <MenuButton to="/aboutme/" title="👩🏼‍💻 About" />
                   </MenuItem>
                   <MenuItem onClick={handleClose}>
                     <MenuButton to="/project/" title="👩🏻‍🎨 Portfolio" />

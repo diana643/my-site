@@ -1,9 +1,9 @@
-import React from "react"
+import React, { Fragment } from "react"
 import { makeStyles } from "@material-ui/core/styles"
 import Grid from "@material-ui/core/Grid"
-import Header from "../components/header"
 import Footer from "../components/footer"
 import CircularProgress from "@material-ui/core/CircularProgress"
+import Header from "../components/header"
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -32,14 +32,14 @@ const useStyles = makeStyles(theme => ({
     color: "#EAE691",
   },
   link: {
-    fontWeight:"500",
+    fontWeight: "500",
     textDecoration: "none",
     color: "#000",
     transition: "0.2s ease",
     "&:hover": {
       backgroundColor: "#688A5F",
       color: "#f8f8f8",
-      fontWeight:"500",
+      fontWeight: "500",
     },
   },
 }))
@@ -48,12 +48,10 @@ export default () => {
   const classes = useStyles()
 
   return (
-    <div>
-      <div>
+    <Fragment>
       <Header />
-      </div>
-     
       <div className={classes.root}>
+      
         <Grid container justify="center">
           <h1 className={classes.title}>About me</h1>
         </Grid>
@@ -120,7 +118,7 @@ export default () => {
                 I am familar with several front-end frameworks and design tools,
                 and I am used to working with the Agile method. To demonstrate
                 my ability, I am now building my personal website,and as you can
-                see it's going pretty well! 
+                see it's going pretty well!
               </p>
             </Grid>
           </Grid>
@@ -138,7 +136,7 @@ export default () => {
               <Grid item>
                 <CircularProgress
                   variant="static"
-                  value={80}
+                  value={85}
                   thickness={10}
                   size={80}
                   className={classes.skill}
@@ -154,7 +152,7 @@ export default () => {
               <Grid item>
                 <CircularProgress
                   variant="static"
-                  value={60}
+                  value={70}
                   thickness={10}
                   size={80}
                   className={classes.skill}
@@ -170,7 +168,7 @@ export default () => {
               <Grid item>
                 <CircularProgress
                   variant="static"
-                  value={65}
+                  value={70}
                   thickness={10}
                   size={80}
                   className={classes.skill}
@@ -203,7 +201,7 @@ export default () => {
               <Grid item>
                 <CircularProgress
                   variant="static"
-                  value={82}
+                  value={85}
                   thickness={10}
                   size={80}
                   className={classes.skill}
@@ -220,7 +218,7 @@ export default () => {
               <Grid item>
                 <CircularProgress
                   variant="static"
-                  value={65}
+                  value={75}
                   thickness={10}
                   size={80}
                   className={classes.skill}
@@ -237,7 +235,7 @@ export default () => {
               <Grid item>
                 <CircularProgress
                   variant="static"
-                  value={75}
+                  value={85}
                   thickness={10}
                   size={80}
                   className={classes.skill}
@@ -254,6 +252,71 @@ export default () => {
                 <CircularProgress
                   variant="static"
                   value={75}
+                  thickness={10}
+                  size={80}
+                  className={classes.skill}
+                />
+              </Grid>
+            </Grid>
+          </Grid>
+          <Grid item xs={6} sm={4} md={3}>
+            <Grid container direction="column" alignItems="center">
+              <Grid item>
+                <h3>HTML</h3>
+              </Grid>
+              <Grid item>
+                <CircularProgress
+                  variant="static"
+                  value={80}
+                  thickness={10}
+                  size={80}
+                  className={classes.skill}
+                />
+              </Grid>
+            </Grid>
+          </Grid>
+          <Grid item xs={6} sm={4} md={3}>
+            <Grid container direction="column" alignItems="center">
+              <Grid item>
+                <h3>CSS/SCSS</h3>
+              </Grid>
+              <Grid item>
+                <CircularProgress
+                  variant="static"
+                  value={80}
+                  thickness={10}
+                  size={80}
+                  className={classes.skill}
+                />
+              </Grid>
+            </Grid>
+          </Grid>
+
+          <Grid item xs={6} sm={4} md={3}>
+            <Grid container direction="column" alignItems="center">
+              <Grid item>
+                <h3>Java</h3>
+              </Grid>
+              <Grid item>
+                <CircularProgress
+                  variant="static"
+                  value={68}
+                  thickness={10}
+                  size={80}
+                  className={classes.skill}
+                />
+              </Grid>
+            </Grid>
+          </Grid>
+          <Grid item xs={6} sm={4} md={3}>
+            <Grid container direction="column" alignItems="center">
+              <Grid item>
+                <h3>GraphQL</h3>
+              </Grid>
+              <Grid item>
+                <CircularProgress
+                  variant="static"
+                  value={60}
                   thickness={10}
                   size={80}
                   className={classes.skill}
@@ -281,6 +344,6 @@ export default () => {
         </Grid>
       </div>
       <Footer />
-    </div>
+    </Fragment>
   )
 }

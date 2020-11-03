@@ -48,7 +48,7 @@ export default () => {
                 Hello there! I'm Sian.
               </h1>
               <h2 style={{ fontWeight: "300",letterSpacing: ".2rem", }}>
-                Beijing born and raised, I am now based in Paris. I'm a web developper and UI/UX designer. I am also running a podcast, {" "}
+                Beijing born and raised, I am now based in Paris. I'm a web developer and UI/UX designer. I am also running a podcast, {" "}
                 <a className={classes.link} href="https://anchor.fm/diana643">
                   {" "}
                   Liang Qiang.
@@ -57,7 +57,7 @@ export default () => {
             </Fade>
           </Grid>
           <Grid container justify="flex-end" style={{marginTop:"15px"}}>
-            <MenuButton to="/about/" title="More about me" />
+            <MenuButton to="/aboutme/" title="More about me" />
           </Grid>
         </Grid>
         <Grid item xs={12} sm={6}>
